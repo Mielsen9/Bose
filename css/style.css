@@ -1,0 +1,231 @@
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/inter-v13-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html{
+  box-sizing: border-box;
+}
+
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+
+body{
+  color: #292929;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.wrepper{
+  max-width: 1020px; 
+  padding: 0 15px;
+  margin:0 auto;
+}
+
+.titles{
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 100% */
+  letter-spacing: -1.5px;
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 64px;
+}
+
+/* Header styles start*/
+
+.header{
+  /* position:fixed;
+  top: 0;
+  left: 0; */
+  position: absolute;
+  width: 100%;
+  /* background: url(../img/Headphones-image-1.png);
+  background-size: cover; */
+}
+
+.header-wrepper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 152px;
+  align-items: center;
+}
+
+.header-burger{
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.header-logo{
+  display: flex;
+  width: 190.08px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header styles end */
+
+/* Intro styles start */
+
+.intro{
+  height: 100vh;
+  background: url(../img/intro-bekgraund.jpg) no-repeat ;
+  background-size: cover;
+}
+
+.sound-waves{
+  padding-top: 520px;
+}
+
+.pig-sond{
+  width: 64px;
+  height: 76px;
+  flex-shrink: 0;
+}
+
+.intro-text{
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 100%; /* 48px */
+  letter-spacing: -1.5px;
+}
+
+.intro-text-box{
+  width: 498px;
+  height: 96px;
+  padding-top: 40px;
+}
+
+/* Intro stales end */
+
+/* Recommended styles start*/
+
+.recommended-text{
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 64px;
+}
+
+.recommended-box{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column-gap: 24px;
+}
+
+.strong-text{
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 22.4px */
+  margin-top: 32px;
+  margin-bottom: 8px;
+
+}
+
+.text-prays{
+  margin-top: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 22.4px */
+
+}
+
+/*Recommended styles ent*/
+
+/*Products-category styles start*/
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 24px;
+  grid-row-gap: 114px;
+  margin-bottom: 114px;
+}
+
+.large-card{
+  grid-column: span 3;
+  width: 672px;
+  height: 320px;
+  flex-shrink: 0;
+}
+
+.card{
+  width: 324px;
+  height: 320px;
+  flex-shrink: 0;
+}
+
+.last-card{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.opis{
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 33.6px */
+}
+
+/*Products-category styles end*/
+
+/*Why buy styles start*/
+
+.box-buy{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.buy{
+  width: 411px;
+  height: 524px;
+}
+
+.text-buy{
+  width: 498px;
+  height: 94px;
+  padding-top: 120px;
+}
+
+.text{
+  font-weight: 700;
+  line-height: 140%; /* 22.4px */
+  padding-bottom: 16px;
+
+}
+
+.paragraph{
+  padding-top: 24px;
+}
+/*Why buy styles end*/
+
+/*Futer styles start*/
+
+.futer{
+  height: 460px ;
+  background: url(../img/Futer.jpg) no-repeat ;
+  background-size: cover;
+}
+
+/*Futer styles end*/
